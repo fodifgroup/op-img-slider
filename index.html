@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/1.png" alt="1" />
+          <h1>BUGGY</h1>
+          <div class="details">
+            <h2>Buggy</h2>
+            <p>Yonko</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/2.png" alt="2" />
+          <h1>TORAO</h1>
+          <div class="details">
+            <h2>Law</h2>
+            <p>Kaizoku</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/3.png" alt="3" />
+          <h1>SANJI</h1>
+          <div class="details">
+            <h2>Sanji</h2>
+            <p>Nakama</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/4.png" alt="4" />
+          <h1>MUGIWARA</h1>
+          <div class="details">
+            <h2>Luffy</h2>
+            <p>Kaizoku</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/5.png" alt="5" />
+          <h1>MARIMO</h1>
+          <div class="details">
+            <h2>Zoro</h2>
+            <p>Nakama</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/6.png" alt="6" />
+          <h1>KID</h1>
+          <div class="details">
+            <h2>Kid</h2>
+            <p>Kaizoku</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/7.png" alt="7" />
+          <h1>SHANKS</h1>
+          <div class="details">
+            <h2>Shanks</h2>
+            <p>Yonko</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
